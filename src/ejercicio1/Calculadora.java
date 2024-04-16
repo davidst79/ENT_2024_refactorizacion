@@ -14,22 +14,16 @@ public class Calculadora {
 	       return factor1 * factor2;
 	    }
 
-	    public int dividir(int dividendo, int divisor) {
+	    public int dividir(int a, int b) {
 	    	
-	    	try {
-	    		
-	    		if(divisor == 0) {
-	    			throw new Exception("Error: No se puede dividir por cero");
-	    		}
-	    		else {
-	    			int resultado = dividendo / divisor;
-	    			return resultado;
-	    		}
-	    	}
-	    	catch(Exception e) {
-	    		System.out.println(e.getMessage());
-	    	}
-			return divisor;
+	        if (b == 0) {
+	            // TODO division por cero. ¿LANZAR EXCEPCION?
+	            return 0;
+	        } 
+	        else {
+	            int resultado = a / b;
+	            return resultado;
+	        }
 	    }
-
 }
+

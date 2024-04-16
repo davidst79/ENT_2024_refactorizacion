@@ -10,8 +10,6 @@ public class Start {
 	        System.out.println("Resta: " + calc.restar(10, 5));
 	        System.out.println("Multiplicación: " + calc.multiplicar(10, 5));
 	        System.out.println("División: " + calc.dividir(10, 5));
-	    
-
 	}
 
 }
